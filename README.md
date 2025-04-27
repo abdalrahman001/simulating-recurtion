@@ -1,49 +1,38 @@
-Fibonacci Iterative Simulation
-This project implements a Fibonacci number calculation by simulating recursion manually using a stack data structure.
-It mimics how recursion works internally, but without using real function calls!
+# Simulating Recursion - Fibonacci Calculation
 
-How it works
-A Call struct represents the state of each "recursive call."
+This project implements the calculation of the **Fibonacci sequence** by **simulating recursion manually** using a **stack** in C++.  
+It demonstrates how recursion works internally by managing the function calls step-by-step without actual recursive function calls.
 
-A std::stack is used to manage the calls manually.
+## How It Works
 
-The algorithm handles the function's call locations and return values step-by-step, like a real call stack.
+- A `Call` struct represents each simulated recursive call.
+- A `std::stack` holds the pending calls, just like the system call stack.
+- The algorithm handles the sequence of operations (locations) manually.
+- It calculates Fibonacci numbers iteratively while mimicking recursion.
 
-This technique helps understand how recursion can be transformed into iteration.
+This technique helps understand recursion, stack frames, and how recursion can be manually converted into iteration.
 
-How to run
-Clone the repository:
+## How to Run
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Compile the code:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/abdalrahman001/simulating-recurtion.git
+    cd simulating-recurtion
+    ```
 
-bash
-Copy
-Edit
-g++ main.cpp -o fib
-Run it:
+2. Compile the code:
+    ```bash
+    g++ main.cpp -o simulate_recursion
+    ```
 
-bash
-Copy
-Edit
-./fib
-You can also edit n inside the main() function to compute different Fibonacci numbers.
+3. Run the executable:
+    ```bash
+    ./simulate_recursion
+    ```
 
-Example output
-If n = 5, the program outputs:
+The program calculates and prints `F(n)`, where `n` is defined inside `main.cpp`.
 
-r
-Copy
-Edit
-F(5) = 5
-Why simulate recursion?
-To understand how function calls and returns are managed internally.
+## Example Output
 
-To optimize recursive algorithms and prevent stack overflows.
-
-To prepare for advanced algorithm techniques like dynamic programming.
+For `n = 5`, the output will be:
 
